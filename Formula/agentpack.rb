@@ -1,25 +1,25 @@
 class Agentpack < Formula
   desc "The package manager for AI coding agents — pin, resolve, and sync skills & plugins across Claude Code, Cursor, OpenCode, and Codex"
   homepage "https://github.com/OlegHQ/agentpack"
-  version "0.3.6"
+  version "0.3.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.6/agentpack-aarch64-apple-darwin.tar.xz"
-      sha256 "a17a60c3d647a3651c6fdbc2af59c4f4dbad01412e99632a6bfe1088e3af54b1"
+      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.7/agentpack-aarch64-apple-darwin.tar.xz"
+      sha256 "a2c78490651ccf8b177e4202e011f2385ab627d00485335db1f73011e54da601"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.6/agentpack-x86_64-apple-darwin.tar.xz"
-      sha256 "4e0830912c4b64f4a3d3296dbfb51b824379f567cb93ed3995ae53c471348369"
+      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.7/agentpack-x86_64-apple-darwin.tar.xz"
+      sha256 "8b1d3749810128229a2b48047011ad534185ef1c29f867187004bc676326b60e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.6/agentpack-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "93f9219fba08b500debda396eec4d8fbf036daf7726978d45b77e520ae3b54bd"
+      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.7/agentpack-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "fd310bf25c2751bc87ba44f86c6be8ad67dbbcd5f9e64ce8cb9d3f9c7df6e8a3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.6/agentpack-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "aa0721866a4c2d0e0a19724f3ca59ec325887224e6d3360dafc74c9dd9fa8127"
+      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.7/agentpack-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e64df35ce7e95e72c1dce0785e126b347c62a382667700907c1f0069bc1fcb17"
     end
   end
   license "MIT"
