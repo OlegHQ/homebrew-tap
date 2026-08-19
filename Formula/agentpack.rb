@@ -1,25 +1,25 @@
 class Agentpack < Formula
   desc "The package manager for AI coding agents — pin, resolve, and sync skills & plugins across Claude Code, Cursor, OpenCode, and Codex"
   homepage "https://github.com/OlegHQ/agentpack"
-  version "0.3.10"
+  version "0.3.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.10/agentpack-aarch64-apple-darwin.tar.xz"
-      sha256 "b6e246503974e1a483b90a67fab71e3af36287b4093e400c204836953a86114a"
+      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.11/agentpack-aarch64-apple-darwin.tar.xz"
+      sha256 "40bc6e9a92cfa86ccbf23403fb4179027ec9d174a200f1c2679b513df17fdb57"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.10/agentpack-x86_64-apple-darwin.tar.xz"
-      sha256 "69dcdb803152a8d277631fdf5ebb0e0a766f53202b17da381ba69841ceee563e"
+      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.11/agentpack-x86_64-apple-darwin.tar.xz"
+      sha256 "801d69cf4bdb66e592736ccb3dcf0f554bc72fc0e5352c9ed8916078d0436b9f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.10/agentpack-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2b16bcf451779685f83c62ebe238e064a898eea88f1d579cab95fde99b24ea44"
+      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.11/agentpack-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "138f16ff04124a2cc5d7e01ef804372fef1f556801b5d348aa6a6e15fc379efd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.10/agentpack-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0f1d312e5fda834012ac4c0340a3319b03ddcd4492bf10199778a6ea666eaa6f"
+      url "https://github.com/OlegHQ/agentpack/releases/download/v0.3.11/agentpack-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d86dfbdf6544e364cdecf20cb68fb98966f2897ab4389ccff73a475b1b81345b"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class Agentpack < Formula
   end
 
   def install
-    bin.install "agentpack" if OS.mac? && Hardware::CPU.arm?
-    bin.install "agentpack" if OS.mac? && Hardware::CPU.intel?
-    bin.install "agentpack" if OS.linux? && Hardware::CPU.arm?
-    bin.install "agentpack" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "agentpack"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "agentpack"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "agentpack"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "agentpack"
+    end
 
     install_binary_aliases!
 
