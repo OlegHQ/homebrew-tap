@@ -4,21 +4,21 @@ cask "agentpack" do
 
   on_macos do
     on_arm do
-      sha256 "bd77e4565f14462aecf9a851942b87fb3d5315b24f1c414130c467b3531cd62e"
+      sha256 "fee6fd06bde0a6a003f8000bfdeb5fb3996bd4b3e81c930a3b5899ddfdb5b07d"
       url "https://github.com/OlegHQ/agentpack/releases/download/v#{version}/agentpack_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "152d11f2bddeee1925728d6823e73b19114f1eec8643788c172ad51ad7622c95"
+      sha256 "ae4f211cda6b24667cdbdb04b87e060d0aec9fe2cddc4c32943d9435c252409d"
       url "https://github.com/OlegHQ/agentpack/releases/download/v#{version}/agentpack_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6c109aea663de3d9e1975baebf7f3032b86a5d1c3e61c7c77fa8277c767d1ca6"
+      sha256 "95bc0d6cd39a3846692df43b363272ed183fbbb771797720bd01b645cbcbb649"
       url "https://github.com/OlegHQ/agentpack/releases/download/v#{version}/agentpack_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "f499afabf1422e01c33812d668d98aa651ff553db8c4754e9a46f51f48514c5d"
+      sha256 "d9f03bfb0a6276661bafd9f0ff549bdef457c26bfa9b7f75d036e9dc7c0571aa"
       url "https://github.com/OlegHQ/agentpack/releases/download/v#{version}/agentpack_#{version}_linux_amd64.tar.gz"
     end
   end
