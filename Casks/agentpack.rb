@@ -5,27 +5,27 @@ cask "agentpack" do
   on_macos do
     on_arm do
       sha256 "a3b94b411ea04ec80b20f5889f2d06f4f0fdc269a2b98b61baddcbc6c7fa0eec"
-      url "https://github.com/OlegHQ/agentpack/releases/download/v#{version}/agentpack_#{version}_darwin_arm64.tar.gz"
+      url "https://github.com/olegpustovit/agentpack/releases/download/v#{version}/agentpack_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
       sha256 "30d82f8a2d1c4ec7d0ab0778780fbc6a7214df93d0dd2230978c641f0ffd85c2"
-      url "https://github.com/OlegHQ/agentpack/releases/download/v#{version}/agentpack_#{version}_darwin_amd64.tar.gz"
+      url "https://github.com/olegpustovit/agentpack/releases/download/v#{version}/agentpack_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
       sha256 "456dc1059c2e95694a5d8a24e9e803d31c01acd95afea389cf2aa8eb58c4d115"
-      url "https://github.com/OlegHQ/agentpack/releases/download/v#{version}/agentpack_#{version}_linux_arm64.tar.gz"
+      url "https://github.com/olegpustovit/agentpack/releases/download/v#{version}/agentpack_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
       sha256 "0693ee73fb2fc48acbe99c8e2701ee4f0ff12f1efe388c1ed6d30f90b6134543"
-      url "https://github.com/OlegHQ/agentpack/releases/download/v#{version}/agentpack_#{version}_linux_amd64.tar.gz"
+      url "https://github.com/olegpustovit/agentpack/releases/download/v#{version}/agentpack_#{version}_linux_amd64.tar.gz"
     end
   end
 
   name "agentpack"
   desc "Pin and stage agent skills and plugins reproducibly"
-  homepage "https://github.com/OlegHQ/agentpack"
+  homepage "https://github.com/olegpustovit/agentpack"
 
   livecheck do
     skip "Auto-generated on release."
